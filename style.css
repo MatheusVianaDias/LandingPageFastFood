@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat%3Awght%40400%3B500&family=Poppins%3Awght%40300%3B400%3B500&family=Roboto%3Awght%40400%3B500&display=swap%27%29%3B); 
+@import url(https://fonts.googleapis.com/css2?family=Montserrat%3Awght%40400%3B500&family=Poppins%3Awght%40300%3B400%3B500&family=Roboto%3Awght%40400%3B500&display=swap%27%29%3B);
 
 
 * {
@@ -16,7 +16,7 @@ header {
     display: grid;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, #A2383A , #A2383A 45%, #d96410 50%, #701414);
+    background: linear-gradient(90deg, #A2383A, #A2383A 45%, #d96410 50%, #701414);
 }
 
 header img {
@@ -38,7 +38,7 @@ header nav .navegacao {
 }
 
 .navegacao li a:hover {
-    color: #fff ;
+    color: #fff;
 }
 
 /* CONTENT */
@@ -89,7 +89,7 @@ header nav .navegacao {
 
 main {
     display: grid;
-    background-color: #A2383A ;
+    background-color: #A2383A;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
 
@@ -101,7 +101,7 @@ main article {
     border: 1px solid #c9c9c94d;
 }
 
-main article:nth-child(1) h2  {
+main article:nth-child(1) h2 {
     font-size: 2rem;
     color: #fff;
     font-family: 'Poppins';
@@ -121,7 +121,7 @@ main article:nth-child(1) h2::after {
 
 main article:nth-child(1) p {
     color: #adacac;
-    font-size: 1.1re,;
+    font-size: 1.1re, ;
     align-self: end;
 }
 
@@ -182,7 +182,7 @@ main article img {
     font-family: 'Roboto';
     font-weight: 300;
     color: #fff;
-} 
+}
 
 .secao_menu p {
     text-align: center;
@@ -279,7 +279,8 @@ main article img {
     grid-column: 2;
     height: 300px;
     width: 100%;
-    margin-bottom: -60px; /* GAMBIARRA */
+    margin-bottom: -60px;
+    /* GAMBIARRA */
     position: relative;
 }
 
@@ -354,4 +355,68 @@ main article img {
 .endereco .endereco_div span {
     color: #f7f7f7;
     font-size: .8rem;
+}
+
+@media (max-width: 1089px) {
+    .content {
+        display: block;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content p {
+        font-size: 1.9rem
+    }
+
+    .content h1::after {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1089px) {
+    main {
+        display: block;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main article:nth-child(1) h2::after {
+        display: none;
+    }
+
+    main article:nth-child(1) p {
+        font-weight: 300;
+        font-size: 25px;
+    }
+
+    main .prato h3 {
+        font-weight: 300;
+        font-size: 25px;
+    }
+
+    main .prato span:last-child {
+        font-weight: 300;
+        font-size: 25px;
+    }
+
+    .map {
+        display: block;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .map h1::after {
+        display: none;
+    }
+
+    .map p {
+        font-weight: 300;
+        font-size: 25px;
+    }
+    
+    .endereco {
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+    }
 }
